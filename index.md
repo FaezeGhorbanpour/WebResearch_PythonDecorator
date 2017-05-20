@@ -1,4 +1,4 @@
-#Decorators in Python; Operation, Usage
+# Decorators in Python; Operation, Usage
 
 <p dir='rtl' align='right'>بسم الله الرحمن الرحیم</p>
 
@@ -124,7 +124,7 @@ def outer_decorator(*outer_args,**outer_kwargs):
 ```
 
 <p dir = 'rtl' align= 'right'> 
-منابع:
+# منابع:
 </p>
 
 [1] ---, A guide to Python’s function decorators, https://www.thecodeship.com/patterns/guide-to-python-function-decorators/, May 20, 2017.
