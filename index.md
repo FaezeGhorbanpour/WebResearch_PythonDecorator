@@ -109,7 +109,7 @@ def premium_checkpoint():
 
 
 <p dir = 'rtl' align= 'right'> 
-درنهایت فرم کلی تابع Decorator به صورت مقابل می‌باشد:
+ فرم کلی تابع Decorator به صورت مقابل می‌باشد:
 </p>
 
 
