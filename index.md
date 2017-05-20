@@ -1,4 +1,4 @@
-#<p dir = 'rtl' align= 'right'> Decorator ها در پایتون؛ عملکرد، کاربرد</p>
+#Decorators in Python; Operation, Usage
 
 <p dir='rtl' align='right'>بسم الله الرحمن الرحیم</p>
 
