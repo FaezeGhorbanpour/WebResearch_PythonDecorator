@@ -1,3 +1,5 @@
+#<p dir = 'rtl' align= 'right'> Decorator ها در پایتون؛ عملکرد، کاربرد</p>
+
 <p dir='rtl' align='right'>بسم الله الرحمن الرحیم</p>
 
 <p dir = 'rtl' align= 'right'> 
