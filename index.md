@@ -1,3 +1,5 @@
+<link type="text/css" rel="stylesheet" href="style.css" />
+
 # Decorators in Python; Operation, Usage
 
 <p dir='rtl' align='right'>بسم الله الرحمن الرحیم</p>
