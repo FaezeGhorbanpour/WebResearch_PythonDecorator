@@ -1,8 +1,10 @@
 <link type="text/css" rel="stylesheet" href="style.css" />
+<link href="https://cdn.rawgit.com/rastikerdar/vazir-font/v[X.Y.Z]/dist/font-face.css" rel="stylesheet" type="text/css" />
+
 
 # Decorators in Python; Operation, Usage
 
-<p dir='rtl' align='right'>بسم الله الرحمن الرحیم</p>
+<p dir='rtl' align='right' style='font-family:"Vazir", sans-serif; background-color: black;' >بسم الله الرحمن الرحیم</p>
 
 <p dir = 'rtl' align= 'right'> 
 یکی از قابلیت های پایتون، Decorator ها می‌باشند که به صورت پوشش یک تابع یا کلاس عمل می‌کنند و رفتار کد را قبل و بعد از اجرای تابع تغییر می‌دهند بدون اینکه نیازی به تغییر خود تابع باشد. برای مثال در کد زیر با نوشتن @p_decorate قبل تابع موردنظر get_text قصد تغییری در آن داریم، با اینکار درواقع این تابع را به تابع p_decorator پاس داده‌ایم و در این تابع، تابع func_wrapper که تابع پاس داده‌شده را اجرا و ویرایش می‌کند، را به خروجی می‌دهیم. در عمل به جای تابع قبلی، تابع func_wrapper اجرا می‌شود که از تابع قبلی استفاده می‌کند.
