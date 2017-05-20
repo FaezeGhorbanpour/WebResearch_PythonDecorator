@@ -126,7 +126,6 @@ def outer_decorator(*outer_args,**outer_kwargs):
 <p dir = 'rtl' align= 'right'> 
  منابع:
 </p>
-# 
 
 [1] ---, A guide to Python’s function decorators, https://www.thecodeship.com/patterns/guide-to-python-function-decorators/, May 20, 2017.
 
