@@ -4,9 +4,9 @@
 
 # Decorators in Python; Operation, Usage
 
-<p dir='rtl' align='right' style='font-family:"Vazir", sans-serif; background-color: black;' >بسم الله الرحمن الرحیم</p>
+<p dir='rtl' align='right' style='font-family:"Vazir", sans-serif;' >بسم الله الرحمن الرحیم</p>
 
-<p dir = 'rtl' align= 'right'> 
+<p dir = 'rtl' align= 'right'  style='font-family:"Vazir", sans-serif;'> 
 یکی از قابلیت های پایتون، Decorator ها می‌باشند که به صورت پوشش یک تابع یا کلاس عمل می‌کنند و رفتار کد را قبل و بعد از اجرای تابع تغییر می‌دهند بدون اینکه نیازی به تغییر خود تابع باشد. برای مثال در کد زیر با نوشتن @p_decorate قبل تابع موردنظر get_text قصد تغییری در آن داریم، با اینکار درواقع این تابع را به تابع p_decorator پاس داده‌ایم و در این تابع، تابع func_wrapper که تابع پاس داده‌شده را اجرا و ویرایش می‌کند، را به خروجی می‌دهیم. در عمل به جای تابع قبلی، تابع func_wrapper اجرا می‌شود که از تابع قبلی استفاده می‌کند.
 </p>
 
@@ -25,7 +25,7 @@ print get_text("John")
 # Outputs <p>lorem ipsum, John dolor sit amet</p>
 ```
 
-<p dir = 'rtl' align= 'right'> 
+<p dir = 'rtl' align= 'right'  style='font-family:"Vazir", sans-serif;'> 
 در صورتی که از چندین Decorator استفاده کنیم ترتیبشان قبل تابع مهم است و از نزدیکترین به تابع اصلی به دورترین اجرا می‌شود. برای استفاده‌کردن Decorator در متدهای داخل کلاس نیز از args  و *kwargs به عنوان پارامتر برای تابع خروجی داده‌شده (func_wrapper) استفاده می‌کنیم که باعث می‌شود، این تابع هر تعداد پارامتر را قبول کند. تابع wrapperکه به جای تابع اصلی ما اجرا می‌شود باعث می‌شود نوع __name__ ، __doc__ و __module__ تابع اصلی ما تغییر کند، که درعیب یابی کد، ما را دچار مشکل می‌کند، لذا میتوانیم از ماژول functools از تابع @wraps(func) به عنوان Decorator تابع خروجی داده شده (func_wrapper) استفاده کنیم. که در کد زیر نحوه استفاده آمده است:
 </p>
 
@@ -57,7 +57,7 @@ print my_person.get_fullname.__module__ # __main__
 ```
 
 
-<p dir = 'rtl' align= 'right'> 
+<p dir = 'rtl' align= 'right' style='font-family:"Vazir", sans-serif;'> 
 یکی از کاربردهای Decorator در دادن سطح دسترسی انواع کاربر برای توابع مختلف می‌باشد. به این منظور که برخی کاربران که مثلا وارد سیستم شده‌اند (Logged_in )، اجازه اجرای برخی توابع را خواهند داشت. به این منظور میتوانیم از decoratorای مثل @reguires_logged_in که در مثال زیر آمده استفاده کنیم .کسانی قادر به اجرای new_game را خواهد داشت که چنین سطح دسترسی داشته باشند در غیر اینصورت با Exception روبرو خواهند شد.
 </p>
 
@@ -79,7 +79,7 @@ def new_game():
 ```
 
 
-<p dir = 'rtl' align= 'right'> 
+<p dir = 'rtl' align= 'right' style='font-family:"Vazir", sans-serif;'> 
 اگر دو سطح دسترسی دیگر مثل administrator و premium_member نیز داشته باشیم، Decorator ها شبیه کد بالا خواهد بود، لذا جهت جلوگیری از تکرار، میتوانیم پاس دادن، داده به Decorator کمک بگیریم. برای اینکار، باید از تابعی استفاده کنیم که این داده را بگیرد و Decorator  را برگرداند همانند کد زیر عمل می‌کنیم که تابع reguires_permission  نوع کاربر که اجازه اجرا دارد را گرفته و پس از فراخوانی توابع decorator و decorated ،(به علت مفهموم Closure این توابع به sPermission دسترسی دارند.) با نوع کاربری که در حال اجراست مقایسه میکند و یا تابع را اجرا و یا Exception می‌دهد. ما به این دلیل از سه سطح تابع استفاده میکنیم که اولا باید مقدار برگشتی تابع اول، تابعی باشد که شامل تابع decorated شده باشد و تابع دوم نیز تابعی که باید جای تابع اصلی جایگذاری شود، را برگرداند.
 </p>
 
@@ -112,7 +112,7 @@ def premium_checkpoint():
 ```
 
 
-<p dir = 'rtl' align= 'right'> 
+<p dir = 'rtl' align= 'right'  style='font-family:"Vazir", sans-serif;'> 
  فرم کلی تابع Decorator به صورت مقابل می‌باشد:
 </p>
 
@@ -127,7 +127,7 @@ def outer_decorator(*outer_args,**outer_kwargs):
     return decorator      
 ```
 
-<p dir = 'rtl' align= 'right'> 
+<p dir = 'rtl' align= 'right' style='font-family:"Vazir", sans-serif;'> 
  منابع:
 </p>
 
